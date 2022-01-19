@@ -39,7 +39,6 @@ export class RingBuffer<T> {
   }
 
   public pop(): T | undefined {
-    // not implemented
     if (this.buffer.length > 0) {
       return this.buffer.pop();
     } else {
