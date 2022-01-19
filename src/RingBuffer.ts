@@ -27,7 +27,6 @@ export class RingBuffer<T> {
   }
 
   public peek(): T | undefined {
-    // not implemented
     if (this.buffer.length > 0) {
       return this.buffer[this.buffer.length - 1];
     } else {
