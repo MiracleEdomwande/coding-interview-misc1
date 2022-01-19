@@ -31,12 +31,10 @@ export namespace DeepCopy {
    *
    */
   export function deepCopy<T extends any>(source: T): T {
-    //null case
     if (source === null) {
       return source;
     }
 
-    //array case
     if (source instanceof Array) {
       const copy = [] as any[];
       (source as any[]).forEach((arrElement) => {
@@ -45,7 +43,6 @@ export namespace DeepCopy {
       return copy.map((val: any) => deepCopy<any>(val)) as any;
     }
 
-    //other cases
     if (typeof source === "object" && source !== {}) {
       const copy = { ...(source as { [key: string]: any }) } as {
         [key: string]: any;
