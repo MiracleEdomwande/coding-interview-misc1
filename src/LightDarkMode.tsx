@@ -47,7 +47,6 @@ export function useMode(): useModeType<Theme> {
 };
 
 export const Main = () => {
-
     return (
         <div>
             <Settings />
