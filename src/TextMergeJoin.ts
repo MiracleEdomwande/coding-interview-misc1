@@ -20,9 +20,6 @@ export namespace TextMergeJoin {
     readonly str: string;
   }
 
-  /**
-   *
-   */
   export function doMergeWords(
     data: ReadonlyArray<IPDFTextWord>
   ): ReadonlyArray<IPDFTextWord> {
